@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Student Search</h2>
+
+<input id="roll" placeholder="Enter Roll Number">
+<button onclick="search()">Search</button>
+<p id="result"></p>
+
+<script>
+let students = [
+  {name: "Ravi", roll: "101"},
+  {name: "Priya", roll: "102"}
+];
+
+function search() {
+  let r = document.getElementById("roll").value;
+  let s = students.find(x => x.roll == r);
+
+  document.getElementById("result").innerHTML =
+    s ? s.name : "Student not found";
+}
+</script>
+</body>
+</html>

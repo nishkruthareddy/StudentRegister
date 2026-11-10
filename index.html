@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Student Registration</h2>
+
+<input id="name" placeholder="Student Name">
+<input id="roll" placeholder="Roll Number">
+<button onclick="register()">Register</button>
+<p id="msg"></p>
+
+<script>
+function register() {
+  let n = document.getElementById("name").value;
+  let r = document.getElementById("roll").value;
+
+  if (n == "" || r == "")
+    msg.innerHTML = "Fill all fields";
+  else
+    msg.innerHTML = "Registered: " + n + " " + r;
+}
+</script>
+</body>
+</html>

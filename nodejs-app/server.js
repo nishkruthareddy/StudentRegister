@@ -1,0 +1,1 @@
+console.log("this application from docker container");
